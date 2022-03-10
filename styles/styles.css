@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.parallax {
+    width: 100%;
+    height: 100vh;
+    perspective: 8px;
+    perspective-origin: 50%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.parallax-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.parallax-img--bg {
+    height: auto;
+    width: 100%;
+    /* transform: translateZ(0px) scale(1); */
+    z-index: 0;
+    width: 100%;
+    display: block;
+}
+
+.parallax-bg {
+
+}
+
+.parallax-monachos {
+    height: 100%;
+    transform: translateZ(-10px) scale(2.25);
+    transform-origin: 10% 50%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.parallax-txt {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
